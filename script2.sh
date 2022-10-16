@@ -13,6 +13,7 @@ if [ ! -f phh.pem ];then
 fi
 
 mkdir unpack
+cp YVdq ../recovery.img
 cd unpack
 ../magiskboot unpack ../recovery.img
 ../magiskboot cpio ramdisk.cpio extract
