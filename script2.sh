@@ -1,5 +1,16 @@
 #!/bin/bash
 
+if [ -f YVdq ];then
+	lz4 -B6 --content-size -f YVdq recovery2.img
+fi
+
+off=$(grep -ab -o SEANDROIDENFORCE recovery.img |tail -n 1 |cut -d : -f 1)
+dd if=recovery2.img of=r.img bs=4k count=$off iflag=count_bytes
+
+if [ ! -f phh.pem ];then
+    openssl genrsa -f4 -out phh.pem 4096
+fi
+
 mkdir unpack
 cd unpack
 ../magiskboot unpack ../r.img
