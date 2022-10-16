@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir unpack
+cd unpack
 ../magiskboot unpack ../r.img
 ../magiskboot cpio ramdisk.cpio extract
 # Reverse fastbootd ENG mode check
@@ -16,5 +17,5 @@ mkdir unpack
 ~runner/work/Patch-Recovery/Patch-Recovery/magiskboot hexpatch system/bin/recovery 24f0fcee30b1681c 24f0fcee30b9681c
 ~runner/work/Patch-Recovery/Patch-Recovery/magiskboot hexpatch system/bin/recovery 27f02eeb30b1681c 27f02eeb30b9681c
 ~runner/work/Patch-Recovery/Patch-Recovery/magiskboot  cpio ramdisk.cpio 'add 0755 system/bin/recovery system/bin/recovery'
-~runner/work/Patch-Recovery/Patch-Recovery/magiskboot  repack ../r.img  new-boot.img
+~runner/work/Patch-Recovery/Patch-Recovery/magiskboot  repack ../r.img new-boot.img
 cp new-boot.img ../recovery-patched.img
