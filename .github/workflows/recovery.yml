@@ -6,10 +6,10 @@ on:
       RECOVERY_URL:
         description: 'RECOVERY URL'
         required: true
-        default: 'https://oshi.at/zGBZ/recovery.img'
+        default: 'https://oshi.at/iRGV/recovery.img'
 
 env:
-  RECOVERY_URL: https://oshi.at/zGBZ/recovery.img
+  RECOVERY_URL: https://oshi.at/iRGV/recovery.img
 
 jobs:
   build:
