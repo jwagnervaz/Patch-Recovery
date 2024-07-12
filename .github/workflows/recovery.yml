@@ -6,10 +6,10 @@ on:
       RECOVERY_URL:
         description: 'RECOVERY URL'
         required: true
-        default: 'https://oshi.at/iRGV/recovery.img'
+        default: 'https://s25.filetransfer.io/storage/download/8hx9yWKt8TKx'
 
 env:
-  RECOVERY_URL: https://oshi.at/iRGV/recovery.img
+  RECOVERY_URL: https://s25.filetransfer.io/storage/download/8hx9yWKt8TKx
 
 jobs:
   build:
