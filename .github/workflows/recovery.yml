@@ -6,11 +6,10 @@ on:
       RECOVERY_URL:
         description: 'RECOVERY URL'
         required: true
-        default: 'https://s25.filetransfer.io/storage/download/8hx9yWKt8TKx'
+        default: 'https://filetransfer.io/data-package/rcaGjZfq#link'
 
 env:
-  RECOVERY_URL: https://s25.filetransfer.io/storage/download/8hx9yWKt8TKx
-
+  RECOVERY_URL: https://filetransfer.io/data-package/rcaGjZfq#link
 jobs:
   build:
     runs-on: ubuntu-latest
